@@ -19,15 +19,15 @@ MyCameraProject
     
     //开启
     [_cameraImageHelper startRunning];
-  
+    
+    
     //嵌入到视图中
-   [_cameraImageHelper embedPreviewInView:self.cameraView];
-  
-  
-  //拍照获取图片
-  [_cameraImageHelper captureStillImage:^(UIImage *image) {
-        
-    }];
+    [_cameraImageHelper embedPreviewInView:self.cameraView];
+    
+    
+    //拍照获取图片
+    [_cameraImageHelper captureStillImage:^(UIImage *image) {}];
+    
     
     //闪光灯切换状态，可以根据状态效果自行设置按钮的图标样式
     FlashStatus status= [_cameraImageHelper changeFlash];
