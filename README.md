@@ -31,12 +31,10 @@ MyCameraProject
     
     //闪光灯切换状态，可以根据状态效果自行设置按钮的图标样式
     FlashStatus status= [_cameraImageHelper changeFlash];
-    
     switch (status) {
         case ON:
             [sender setTitle:@"ON" forState:UIControlStateNormal];
             break;
-            
         case OFF:
             [sender setTitle:@"OFF" forState:UIControlStateNormal];
             break;
@@ -47,3 +45,5 @@ MyCameraProject
     
     //摄像头切换
     [_cameraImageHelper swapCameraPosition];
+
+做的还不好，如果你有更好的实现方式，欢迎交流！alienjun@126.com
