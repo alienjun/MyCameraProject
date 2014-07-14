@@ -18,9 +18,10 @@ MyCameraProject
     }];
     
     //开启
-  [_cameraImageHelper startRunning];
-  //嵌入到视图中
-  [_cameraImageHelper embedPreviewInView:self.cameraView];
+    [_cameraImageHelper startRunning];
+  
+    //嵌入到视图中
+   [_cameraImageHelper embedPreviewInView:self.cameraView];
   
   
   //拍照获取图片
